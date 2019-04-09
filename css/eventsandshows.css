@@ -1,0 +1,276 @@
+.wrap-images{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5%;
+  grid-row-gap: 12px;
+}
+
+.image-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(172, 50, 288, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 8px;
+  transition: .5s;
+}
+
+.img-overlay i {
+  color: #fff;
+  font-size: 48px;
+}
+
+
+.image-wrapper:hover .img-overlay{
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+#overlay {
+  background: rgba(172, 50, 288, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 100;
+}
+
+#overlay img {
+  margin: 0;
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  padding: 0;
+}
+
+#nextButton,#prevButton {
+  position: relative;
+  color: #fff;
+  font-size: 34px;
+  transition: opacity 0.4s;
+  width: 15%;
+  height: 100%;
+}
+
+#nextButton i,#prevButton i{
+  position: absolute;
+  top: 50%;
+}
+
+#nextButton i{
+  right: 50%;
+}
+
+#prevButton i{
+  left: 50%;
+}
+
+#nextButton:hover,#prevButton:hover{
+  opacity: .9;
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 32px;
+  transition: opacity 0.3s;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+#prevButton:hover,#exitButton:hover,#nextButton:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-tabs.nav-tabs-style-2 .nav-link.active{
+  border-color: #ac32e4;
+  background-color: #ac32e4;
+  color: white;
+}
+
+.nav-tabs.nav-tabs-style-2 .nav-link{
+  padding-bottom: 6px;
+  border-bottom: 3px solid #e7e7e7;
+  background-color: transparent;
+}
+
+.nav-link {
+  display: block;
+}
+
+.nav-tabs .nav-link {
+  position: relative;
+  margin: 0 5px 10px;
+  padding: 9px 22px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 0;
+  border-radius: 0;
+  background-color: #ededed;
+  color: #404040;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.wrap-3{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 20px;
+}
+
+.event-card{
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  text-align: center;
+  border: 1.2px solid #f2eded;
+}
+
+.event-card:hover{
+  box-shadow: 1px 1px 12px grey;
+}
+
+.event-thumb {
+  width: 100%;
+}
+
+.event-thumb img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.event-card-body {
+    padding: 20px;
+}
+
+.event-title a {
+    transition: color .3s;
+    color: #343b43;
+    text-decoration: none;
+}
+
+.event-title a:hover{
+  color: #ac32e4;
+}
+
+.event-meta {
+    padding-bottom: 9px;
+    color: rgba(140,140,140,0.75);
+    font-size: 11px;
+    font-weight: 600;
+} 
+
+.event-meta .fa-heart-o{
+  color: #f00;
+}
+
+.event-meta a {
+    color: rgba(140,140,140,0.75);
+    text-decoration: none;
+}
+
+.tag-link {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    padding: 5px 12px;
+    transition: .5s;
+    background-color: #fff;
+    color: #404040;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09);
+    box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09);
+    z-index: 1;
+}
+
+
+
+.tag-link:hover{
+  background: linear-gradient(to right, #ac32e4 0%, #ac32e4 20%, #e833b0 100%) !important;
+  color: #fff;
+}
+
+@media (max-width: 992px){
+  .wrap-3{
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media (max-width: 768px) {
+
+  .wrap-images{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #overlay img {
+    width: 82%;
+  }
+
+  #nextButton,#prevButton {
+    width: 9%;
+  }
+
+  .wrap-3{
+    grid-template-columns: auto; 
+  }
+}
+
+@media (max-width: 578px){
+
+  #overlay img {
+    width: 84%;
+  }
+
+  #nextButton,#prevButton {
+    width: 7%;
+  }
+
+  .wrap-images{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

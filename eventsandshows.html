@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Events and Show</title>
+
+  <!-- Bootstrap -->
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/parallax.css" rel="stylesheet">
+  <link href="css/eventsandshows.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--PAge Loader-->
+  <div id = 'overlay-loader'><img src='images/spin.gif' alt='spiner'></div>
+  <!-- Return to Top -->
+  <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+  <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="shopping-cart">
+    <span class="offcanvas-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <div class="p-12">
+      <h6>Your Cart</h6>
+      <div class="widget widget-cart pt-2">
+        <a class="featured-product" href="#">
+          <div class="featured-product-thumb"><img src="images/widgets/cart/01.jpg" alt="Product Image">
+          </div>
+          <div class="featured-product-info">
+            <h5 class="featured-product-title">Samsung Galaxy S9 Plus</h5><span class="featured-product-price">1x $839.99</span>
+          </div>
+          <span class="remove-product"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </a>
+
+        <a class="featured-product" href="#">
+          <div class="featured-product-thumb"><img src="images/widgets/cart/02.jpg" alt="Product Image">
+          </div>
+          <div class="featured-product-info">
+            <h5 class="featured-product-title">Samsung Gear 360 Camera</h5><span class="featured-product-price">1 x $68.00</span>
+          </div>
+          <span class="remove-product"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </a>
+
+        <a class="featured-product" href="#">
+          <div class="featured-product-thumb"><img src="images/widgets/cart/03.jpg" alt="Product Image">
+          </div>
+          <div class="featured-product-info">
+            <h5 class="featured-product-title">Edifier W855BT Bluetooth</h5><span class="featured-product-price">1 x $99.85</span>
+          </div>
+          <span class="remove-product"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </a>
+        <hr>
+        <span class="text-sm text-muted">Subtotal:&nbsp;</span><strong>$1,007.84</strong>
+        <div class="d-flex justify-content-between pt-20">
+          <a class="btn-cart" href="#">View Cart</a>
+          <a class="btn-check" href="#">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="container-fluid">
+    <!-- Topbar before menu -->
+    <div class="topbar d-none d-lg-block">
+      <div class="justify-content-between align-items-center topbar-gird-2">
+        <!-- little info and social -->
+        <div>
+          <a class="header-link mr-3" href="#"><i class="fa fa-phone" aria-hidden="true"></i>+0 01223 456789</a>
+          <a class="header-link mr-3" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>1759022@itec.hcmus.edu.vn</a>
+
+        </div>
+
+        <div class="topbar-right">
+          <div class="header-login">
+            <a class="header-link" href="account-login.html"><i class="fa fa-user-o" aria-hidden="true"></i>Login or Create account
+            </a>
+
+          </div>
+          <a class="social-btn sb-style-3 sb-twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a class="social-btn sb-style-3 sb-facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a class="social-btn sb-style-3 sb-pinterest" href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+          <a class="social-btn sb-style-3 sb-instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+        </div>
+      </div>
+    </div>
+    <!-- END Topbar before menu -->
+    <div class="wrap-menu">
+      <div class="logo">
+        <div class="logo-text">
+          <div class="face face1"><span>Dinh Loc</span></div>
+          <div class="face face2"><span>Dinh Loc</span></div>
+        </div>
+      </div>
+      <nav class="">
+        <span class="offcanvas-close" id="menu-x"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li class="sub-menu"><a href="#">Product</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">Link 1</a></li>
+              <li class="dropdown-item"><a href="#">Link 2</a></li>
+              <li class="dropdown-item"><a href="#">Link 3</a></li>
+              <li class="dropdown-item"><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu"><a href="#">Service</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">Link 1</a></li>
+              <li class="dropdown-item"><a href="#">Link 2</a></li>
+              <li class="dropdown-item"><a href="#">Link 3</a></li>
+              <li class="dropdown-item"><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li><a href="eventsandshows.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </nav>
+      <div class="wrap-header-button">
+        <ul class="header-buttons d-inline-block align-middle mr-lg-2">
+          <li class="menu-toggle d-block d-lg-none"><a data-toggle="offcanvas"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+          <li><a><i class="fa fa-search" aria-hidden="true"></i></a></li>
+          <li><a id="shopping-cart-view"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a><span class="badge badge-danger">3</span></li>
+        </ul>
+      </div>
+    </div>
+    <!--<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>-->
+  </header>
+
+  <!-- bg-parallax -->
+  <section class="bg-contact parallax-bg mr-header" style="background-image: url(images/event-bg.jpg)">
+    <span class="bg-overlay opacity-60"></span>
+    <div class="container parallax-box text-center">
+      <h1 class="title-parallax">Events and shows</h1>
+      <h5 class="h5-parallax">We hold technology exhibitions every month</h5>
+      
+      <button class="btn btn-primary mt-40">Join our exhibitions</button>
+    </div>
+  </section><!-- END bg-parallax -->
+
+  <section id="gallery" class="pt-40">
+    <div class="container mb-24">
+      <div id="image-gallery">
+        <h2 class="h4 block-title text-center ">Our Previous Events</h2>
+        <div class="wrap-images">
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/01.jpg"><img src="images/portfolio/01.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/02.jpg"><img src="images/portfolio/02.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/03.jpg"><img src="images/portfolio/03.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/04.jpg"><img src="images/portfolio/04.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/05.jpg"><img src="images/portfolio/05.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/06.jpg"><img src="images/portfolio/06.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/07.jpg"><img src="images/portfolio/07.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="image-wrapper">
+              <a href="images/portfolio/08.jpg"><img src="images/portfolio/08.jpg" class=""></a>
+              <div class="img-overlay">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div><!-- End wrap -->
+      </div><!-- End image gallery -->
+    </div><!-- End container --> 
+  </section>
+
+  <div class="container mt-40 mb-40 text-center">
+    <h2 class="h4 block-title text-center ">News about Events</h2>
+
+    <ul class="nav nav-tabs nav-tabs-style-2 mb-24 list-icon">
+      <li class="nav-item"><a class="nav-link active" href="#" data-filter="*">All&nbsp;<sup>9</sup></a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-filter=".mobile-apps">Mobile Apps&nbsp;<sup>3</sup></a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-filter=".web-design">Web Design&nbsp;<sup>1</sup></a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-filter=".branding">Branding&nbsp;<sup>3</sup></a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-filter=".interior-design">Interior Design&nbsp;<sup>2</sup></a></li>
+    </ul>
+
+    <div class="wrap-3" id="wrap-ajax">
+      <div class="event-card">
+        <a class="event-thumb" href="#">
+          <img src="images/portfolio/01.jpg" alt="Event Thumbnail">
+        </a>
+        <div class="event-card-body">
+          <div class="event-meta"><span class="mr-3">
+            <i class="fa fa-user-o" aria-hidden="true"></i> William Smith</span>
+            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>15</a>
+          </div>
+          <h5 class="event-title"><a href="#">iOS App UI Design</a></h5><a class="tag-link" href="#">Mobile Apps</a>
+        </div>
+      </div><!--End event card-->
+
+      <div class="event-card">
+        <a class="event-thumb" href="#">
+          <img src="images/portfolio/02.jpg" alt="Event Thumbnail">
+        </a>
+        <div class="event-card-body">
+          <div class="event-meta"><span class="mr-3">
+            <i class="fa fa-user-o" aria-hidden="true"></i> Benjamin Miller</span>
+            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>22</a>
+          </div>
+          <h5 class="event-title"><a href="#">Web App Front-End</a></h5><a class="tag-link" href="#">Web design</a>
+        </div>
+      </div><!--End event card-->
+
+      <div class="event-card">
+        <a class="event-thumb" href="#">
+          <img src="images/portfolio/03.jpg" alt="Event Thumbnail">
+        </a>
+        <div class="event-card-body">
+          <div class="event-meta"><span class="mr-3">
+            <i class="fa fa-user-o" aria-hidden="true"></i> Olivia Groud</span>
+            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>33</a>
+          </div>
+          <h5 class="event-title"><a href="#">Company Brand Design</a></h5><a class="tag-link" href="#">Branding</a>
+        </div>
+      </div><!--End event card-->
+
+      
+    </div>
+
+
+
+    <div class="text-center mt-40 remove-btn-ajax">
+      <button id="ajax-event" class="btn btn-primary">View more</button>
+    </div>
+  </div>
+
+
+  <footer class="bg-dark pt-40">
+    <div class="container pt-8">
+      <div class="wrap-footer">
+        <div class="logo-site">
+          <div class="logo-footer">
+            <div class="logo">
+              <div class="logo-text">
+                <div class="face face1"><span>Dinh Loc</span></div>
+                <div class="face face2"><span>Dinh Loc</span></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm opacity-50 text-white" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utar enim ad minim veniam.</p>
+          <ul class="list-icon text-sm pb-2">
+            <li>
+              <i class="fa fa-map-marker opacity-60" aria-hidden="true"></i>
+              <a class="navi-link text-white" href="#">
+                &nbsp;256 Nguyen Van cu, District 5, Ho Chi Minh city</a>
+            </li>
+            <li>
+              <i class="fa fa-phone opacity-60" aria-hidden="true"></i>
+              <a class="navi-link text-white" href="#">
+                &nbsp;+(84) 33 027 304</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope-o opacity-60" aria-hidden="true"></i>
+              <a class="navi-link text-white" href="#">
+                &nbsp;1759022@gmail.com</a>
+            </li>
+          </ul>
+          <div class="footer-btn-group">
+            <a class="social-btn sb-style-3 sb-twitter footer-social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="social-btn sb-style-3 sb-facebook footer-social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="social-btn sb-style-3 sb-pinterest footer-social" href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a class="social-btn sb-style-3 sb-instagram footer-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="useful-link">
+          <div class="widget widget-light-skin mb-0">
+            <h4 class="widget-title">Useful Links</h4>
+          </div>
+          <div class="wrap-footer-link">
+            <div class="footer-link left">
+              <div class="widget widget-categories widget-light-skin">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Careers at CreateX</a></li>
+                  <li><a href="#">Services We Provide</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-link right">
+              <div class="widget widget-categories widget-light-skin">
+                <ul>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">My Account Info</a></li>
+                  <li><a href="#">Affiliate Program</a></li>
+                  <li><a href="#">Office Directory</a></li>
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="widget widget-light-skin mb-0">
+              <h4 class="widget-title">Our mobile app</h4>
+          </div>
+          <div class="button-footer-app">
+            <a href="#">
+              <img src="images/button/appStore.png">
+            </a>
+
+            <a href="#">
+              <img src="images/button/ggPlay.png">
+            </a>
+
+            <a href="#">
+              <img src="images/button/windowStore.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!--Copy-right -->
+    <div class="footer-copyright">
+      <p>© Designed by Nguyen Dinh Loc</p>
+    </div><!--END Copy-right -->
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/myscript.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/ajax-request.js"></script>
+</body>
+
+</html>
